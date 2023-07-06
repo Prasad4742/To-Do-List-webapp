@@ -1,0 +1,113 @@
+body {
+  background-image: url('todo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px;
+  padding: 3px;
+  color: rgb(83, 14, 113);
+}
+
+.forminput {
+  margin: 2px;
+  padding: 3px;
+}
+
+#todo-title {
+  border: 2px solid rgb(218, 19, 211);
+  background-color: rgb(210, 219, 216);
+  border-radius: 15px;
+  width: 500px;
+  height: 36px;
+}
+
+#date-picker {
+  background-color: rgb(135 124 192);
+  padding: 2px;
+  top: 50%;
+  left: 50%;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#toclick {
+  background-color: #d9823b;
+  border-radius: 25px;
+  padding: 8px;
+  width: 122px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.main_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.toadd {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px;
+  width: 80%;
+}
+
+.column1,
+.column2 {
+  border: 5px solid;
+  flex: 1;
+  padding: 10px;
+}
+
+#pending-text {
+  color: red;
+  font-weight: bolder;
+  font-size: large;
+}
+#completed-text {
+  color: green;
+  font-weight: bolder;
+  font-size: large;
+}
+
+#pending,
+#complete {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .toadd {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .column1,
+  .column2 {
+    margin-top: 10px;
+  }
+
+  #todo-title {
+    width: 100%;
+  }
+}
